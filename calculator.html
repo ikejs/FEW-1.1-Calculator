@@ -4,6 +4,9 @@
     <title></title>
 
     <style>
+        html {
+            font-family:arial;
+        }
       .calculator {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -14,6 +17,37 @@
                                   "j k l m"
                                   "n o p q"
                                   "r r s t";
+          background-color: #303133;
+          color:white;
+      }
+
+      button {
+          height: 3em;
+          font-size: 2em;
+          padding: 0;
+          border-color: #303133;
+          color: white;
+      }
+
+      .answer {
+          font-size: 3em;
+          line-height: 2em;
+          display: block;
+          margin-right:10px;
+          text-align: right;
+          background-color: #303133
+      }
+
+      .darkgrey {
+          background-color: #434446;
+      }
+
+      .lightgray {
+          background-color: #626365;
+      }
+
+      .orange {
+          background-color: #FF9E0A;
       }
     </style>
   </head>
@@ -22,30 +56,30 @@
     <div class="calculator">
       <div class="answer" style="grid-area: a;">3.14</div>
 
-      <button style="grid-area: b;">C</button>
-      <button style="grid-area: c;">+/-</button>
-      <button style="grid-area: d;">%</button>
+      <button style="grid-area: b;" class="darkgrey">C</button>
+      <button style="grid-area: c;" class="darkgrey">+/-</button>
+      <button style="grid-area: d;" class="darkgrey">%</button>
 
-      <button style="grid-area: e;">/</button>
-      <button style="grid-area: i;">X</button>
-      <button style="grid-area: m;">-</button>
-      <button style="grid-area: q;">+</button>
-      <button style="grid-area: t;">=</button>
+      <button style="grid-area: e;" class="orange">/</button>
+      <button style="grid-area: i;" class="orange">X</button>
+      <button style="grid-area: m;" class="orange">-</button>
+      <button style="grid-area: q;" class="orange">+</button>
+      <button style="grid-area: t;" class="orange">=</button>
 
-      <button style="grid-area: h;">9</button>
-      <button style="grid-area: g;">8</button>
-      <button style="grid-area: f;">7</button>
+      <button style="grid-area: h;" class="lightgray">9</button>
+      <button style="grid-area: g;" class="lightgray">8</button>
+      <button style="grid-area: f;" class="lightgray">7</button>
 
-      <button style="grid-area: l;">6</button>
-      <button style="grid-area: k;">5</button>
-      <button style="grid-area: j;">4</button>
+      <button style="grid-area: l;" class="lightgray">6</button>
+      <button style="grid-area: k;" class="lightgray">5</button>
+      <button style="grid-area: j;" class="lightgray">4</button>
 
-      <button style="grid-area: p;">3</button>
-      <button style="grid-area: o;">2</button>
-      <button style="grid-area: n;">1</button>
+      <button style="grid-area: p;" class="lightgray">3</button>
+      <button style="grid-area: o;" class="lightgray">2</button>
+      <button style="grid-area: n;" class="lightgray">1</button>
 
-      <button style="grid-area: r;">0</button>
-      <button style="grid-area: s;">.</button>
+      <button style="grid-area: r;" class="lightgray">0</button>
+      <button style="grid-area: s;" class="lightgray">.</button>
 
     </div>
 
