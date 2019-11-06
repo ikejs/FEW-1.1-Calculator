@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+    <style>
+      .calculator {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+          grid-template-areas:    "a a a a"
+                                  "b c d e"
+                                  "f g h i"
+                                  "j k l m"
+                                  "n o p q"
+                                  "r r s t";
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="calculator">
+      <div class="answer" style="grid-area: a;">3.14</div>
+
+      <button style="grid-area: b;">C</button>
+      <button style="grid-area: c;">+/-</button>
+      <button style="grid-area: d;">%</button>
+
+      <button style="grid-area: e;">/</button>
+      <button style="grid-area: i;">X</button>
+      <button style="grid-area: m;">-</button>
+      <button style="grid-area: q;">+</button>
+      <button style="grid-area: t;">=</button>
+
+      <button style="grid-area: h;">9</button>
+      <button style="grid-area: g;">8</button>
+      <button style="grid-area: f;">7</button>
+
+      <button style="grid-area: l;">6</button>
+      <button style="grid-area: k;">5</button>
+      <button style="grid-area: j;">4</button>
+
+      <button style="grid-area: p;">3</button>
+      <button style="grid-area: o;">2</button>
+      <button style="grid-area: n;">1</button>
+
+      <button style="grid-area: r;">0</button>
+      <button style="grid-area: s;">.</button>
+
+    </div>
+
+  </body>
+</html>
